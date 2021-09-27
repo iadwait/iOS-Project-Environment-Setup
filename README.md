@@ -6,7 +6,7 @@ Completed
 - Configure Base URL on App Launch
 - Apply Hex Colors by fetching Hex Codes from ColorData.plist File
 - Apply Font Size Based on Device Sizes
-- - Add Api Call's using URL Session
+- Add Api Call's using URL Session
 
 In Process
 - Add User Defined Font's
