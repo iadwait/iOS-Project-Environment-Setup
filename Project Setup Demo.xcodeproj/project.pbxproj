@@ -22,6 +22,9 @@
 		DE5F339227019D53005F8EC3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F339127019D53005F8EC3 /* Extensions.swift */; };
 		DE5F339727019E3C005F8EC3 /* ABUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F339627019E3C005F8EC3 /* ABUtils.swift */; };
 		DE5F339B27019F49005F8EC3 /* ABThemeConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F339A27019F49005F8EC3 /* ABThemeConstant.swift */; };
+		DE5F33A42701B9DA005F8EC3 /* iPhoneSmall.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE5F33A32701B9DA005F8EC3 /* iPhoneSmall.plist */; };
+		DE5F33A72701B9EA005F8EC3 /* iPhoneMedium.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE5F33A62701B9EA005F8EC3 /* iPhoneMedium.plist */; };
+		DE5F33AA2701B9F9005F8EC3 /* iPhoneLarge.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE5F33A92701B9F9005F8EC3 /* iPhoneLarge.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		DE5F339127019D53005F8EC3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		DE5F339627019E3C005F8EC3 /* ABUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABUtils.swift; sourceTree = "<group>"; };
 		DE5F339A27019F49005F8EC3 /* ABThemeConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABThemeConstant.swift; sourceTree = "<group>"; };
+		DE5F33A32701B9DA005F8EC3 /* iPhoneSmall.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = iPhoneSmall.plist; sourceTree = "<group>"; };
+		DE5F33A62701B9EA005F8EC3 /* iPhoneMedium.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = iPhoneMedium.plist; sourceTree = "<group>"; };
+		DE5F33A92701B9F9005F8EC3 /* iPhoneLarge.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = iPhoneLarge.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,11 +114,9 @@
 		DE5F337E27018D54005F8EC3 /* Plist */ = {
 			isa = PBXGroup;
 			children = (
-				DE5F337F27018D6B005F8EC3 /* UAT.plist */,
-				DE5F338227018D7C005F8EC3 /* PreProd.plist */,
-				DE5F338527018D88005F8EC3 /* CUG.plist */,
-				DE5F338827018D91005F8EC3 /* PROD.plist */,
-				DE5F338D27019C9D005F8EC3 /* ColorData.plist */,
+				DE5F33A02701B984005F8EC3 /* Schemes */,
+				DE5F33A12701B98F005F8EC3 /* Colors Data */,
+				DE5F33A22701B9A0005F8EC3 /* Font Sizes */,
 			);
 			path = Plist;
 			sourceTree = "<group>";
@@ -132,6 +136,35 @@
 				DE5F339A27019F49005F8EC3 /* ABThemeConstant.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		DE5F33A02701B984005F8EC3 /* Schemes */ = {
+			isa = PBXGroup;
+			children = (
+				DE5F337F27018D6B005F8EC3 /* UAT.plist */,
+				DE5F338227018D7C005F8EC3 /* PreProd.plist */,
+				DE5F338527018D88005F8EC3 /* CUG.plist */,
+				DE5F338827018D91005F8EC3 /* PROD.plist */,
+			);
+			path = Schemes;
+			sourceTree = "<group>";
+		};
+		DE5F33A12701B98F005F8EC3 /* Colors Data */ = {
+			isa = PBXGroup;
+			children = (
+				DE5F338D27019C9D005F8EC3 /* ColorData.plist */,
+			);
+			path = "Colors Data";
+			sourceTree = "<group>";
+		};
+		DE5F33A22701B9A0005F8EC3 /* Font Sizes */ = {
+			isa = PBXGroup;
+			children = (
+				DE5F33A32701B9DA005F8EC3 /* iPhoneSmall.plist */,
+				DE5F33A62701B9EA005F8EC3 /* iPhoneMedium.plist */,
+				DE5F33A92701B9F9005F8EC3 /* iPhoneLarge.plist */,
+			);
+			path = "Font Sizes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,10 +228,13 @@
 				DE5F335227018266005F8EC3 /* LaunchScreen.storyboard in Resources */,
 				DE5F338E27019C9D005F8EC3 /* ColorData.plist in Resources */,
 				DE5F338627018D88005F8EC3 /* CUG.plist in Resources */,
+				DE5F33A42701B9DA005F8EC3 /* iPhoneSmall.plist in Resources */,
 				DE5F338927018D91005F8EC3 /* PROD.plist in Resources */,
 				DE5F338027018D6B005F8EC3 /* UAT.plist in Resources */,
 				DE5F334F27018266005F8EC3 /* Assets.xcassets in Resources */,
+				DE5F33A72701B9EA005F8EC3 /* iPhoneMedium.plist in Resources */,
 				DE5F334D27018265005F8EC3 /* Main.storyboard in Resources */,
+				DE5F33AA2701B9F9005F8EC3 /* iPhoneLarge.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
