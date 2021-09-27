@@ -17,4 +17,9 @@ class ABThemeConstant {
     let Yellow = "Yellow"
     let LightOrange = "LightOrange"
     
+    // Make Sure to add Font Sizes in iPhoneSmall,iPhoneMedium,iPhoneLarge Plist Files
+    let FontSizeS = "FontSizeS"
+    let FontSizeM = "FontSizeM"
+    let FontSizeL = "FontSizeL"
+    
 }

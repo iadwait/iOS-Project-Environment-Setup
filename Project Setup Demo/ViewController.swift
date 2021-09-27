@@ -22,6 +22,8 @@ class ViewController: UIViewController {
         }
         // Set Colors
         self.view.backgroundColor =  ABUtils.shared.convertHexColor(forColor: ABThemeConstant.shared.LightOrange)
+        // Set Font
+        self.lblAppVersion.font = ABUtils.shared.getSpecificFontSize(fontSize: ABThemeConstant.shared.FontSizeM)
     }
 
 }
