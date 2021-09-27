@@ -12,3 +12,4 @@ In Process
 - Add Function to use SVG Images
 - Add Api Call's Functionality 
 - Add SSL Pinning
+- Code Flow - MVP
