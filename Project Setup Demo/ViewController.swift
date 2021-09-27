@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         // Set Font
         self.lblAppVersion.font = ABUtils.shared.getSpecificFontSize(fontSize: ABThemeConstant.shared.FontSizeM)
         // Api Calls
-        ABNetworkManager.shared.callApiWithURLSession(strURL: "https://api.coindesk.com/v1/bpi/currentprice.json") { (isSuccess, response, error) in
+        ABNetworkManager.shared.callApiWithURLSession(strURL: URLConstant.currentPrice.rawValue) { (isSuccess, response, error) in
             if isSuccess {
                 print("Api Call Success")
             } else {

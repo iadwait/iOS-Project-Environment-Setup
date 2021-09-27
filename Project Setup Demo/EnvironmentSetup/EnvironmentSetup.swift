@@ -7,14 +7,6 @@
 
 import Foundation
 
-/// Enum that will contain Base URL's for all Environments
-enum BaseURL: String {
-    case UAT = "www.uat.com"
-    case PreProd = "www.preprod.com"
-    case CUG = "www.cug.com"
-    case PROD = "www.prod.com"
-}
-
 /// This Class is created to configure Project based on Env Selected
 class EnvironmentSetup: Codable {
     
@@ -51,13 +43,13 @@ class EnvironmentSetup: Codable {
     /// - Returns: Ojbject
     func parseConfig() -> Config {
         #if UAT
-        self.plistUrl = Bundle.main.url(forResource: "UAT", withExtension: "plist")!
+        self.plistUrl = Bundle.main.url(forResource: plistFiles.UAT.rawValue, withExtension: "plist")!
         #elseif PreProd
-        self.plistUrl = Bundle.main.url(forResource: "PreProd", withExtension: "plist")!
+        self.plistUrl = Bundle.main.url(forResource: plistFiles.PreProd.rawValue, withExtension: "plist")
         #elseif CUG
-        self.plistUrl = Bundle.main.url(forResource: "CUG", withExtension: "plist")!
+        self.plistUrl = Bundle.main.url(forResource: plistFiles.CUG.rawValue, withExtension: "plist")!
         #elseif PROD
-        self.plistUrl = Bundle.main.url(forResource: "PROD", withExtension: "plist")!
+        self.plistUrl = Bundle.main.url(forResource: plistFiles.PROD.rawValue, withExtension: "plist")!
         #endif
         let data = try! Data(contentsOf: plistUrl!)
         let decoder = PropertyListDecoder()

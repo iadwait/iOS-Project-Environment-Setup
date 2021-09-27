@@ -19,7 +19,7 @@ class ABUtils {
     func convertHexColor(forColor: String) -> UIColor {
         // Read Color Data Plist
         var myDict: NSDictionary?
-        if let path = Bundle.main.path(forResource: "ColorData", ofType: "plist") {
+        if let path = Bundle.main.path(forResource: plistFiles.ColorData.rawValue, ofType: "plist") {
               myDict = NSDictionary(contentsOfFile: path)
             let color = UIColor(hexString: myDict![forColor] as! String)
             return color
@@ -37,7 +37,7 @@ class ABUtils {
         var myDict: NSDictionary?
         //This Condition is to handle UI for Smallest iPhone like SE,4s,5,5s which have height of 568
         if UIScreen.main.bounds.height <= 568 {
-            if let fontPlistPath = Bundle.main.path(forResource: "iPhoneSmall", ofType: "plist") {
+            if let fontPlistPath = Bundle.main.path(forResource: plistFiles.iPhoneSmall.rawValue, ofType: "plist") {
                 myDict = NSDictionary(contentsOfFile: fontPlistPath)
                 if let _ = myDict {
                     let strFontSize = myDict![fontSize]
@@ -49,7 +49,7 @@ class ABUtils {
         }
         //This Condition is for all Devices having height greater than iPhone 8
         else if UIScreen.main.bounds.height > 667.0 {
-            if let fontPlistPath = Bundle.main.path(forResource: "iPhoneLarge", ofType: "plist") {
+            if let fontPlistPath = Bundle.main.path(forResource: plistFiles.iPhoneLarge.rawValue, ofType: "plist") {
                 myDict = NSDictionary(contentsOfFile: fontPlistPath)
                 if let _ = myDict {
                     let strFontSize = myDict![fontSize]
@@ -61,7 +61,7 @@ class ABUtils {
         }
         // Medium Size Devices
         else {
-            if let fontPlistPath = Bundle.main.path(forResource: "iPhoneMedium", ofType: "plist") {
+            if let fontPlistPath = Bundle.main.path(forResource: plistFiles.iPhoneMedium.rawValue, ofType: "plist") {
                 myDict = NSDictionary(contentsOfFile: fontPlistPath)
                 if let _ = myDict {
                     let strFontSize = myDict![fontSize]

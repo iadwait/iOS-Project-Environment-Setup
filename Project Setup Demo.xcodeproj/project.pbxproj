@@ -26,6 +26,8 @@
 		DE5F33A72701B9EA005F8EC3 /* iPhoneMedium.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE5F33A62701B9EA005F8EC3 /* iPhoneMedium.plist */; };
 		DE5F33AA2701B9F9005F8EC3 /* iPhoneLarge.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE5F33A92701B9F9005F8EC3 /* iPhoneLarge.plist */; };
 		DE5F33AF2701CC73005F8EC3 /* ABNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F33AE2701CC73005F8EC3 /* ABNetworkManager.swift */; };
+		DE5F33BD2701E8EE005F8EC3 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F33BC2701E8ED005F8EC3 /* Enums.swift */; };
+		DE5F33C12701EA85005F8EC3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F33C02701EA85005F8EC3 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		DE5F33A62701B9EA005F8EC3 /* iPhoneMedium.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = iPhoneMedium.plist; sourceTree = "<group>"; };
 		DE5F33A92701B9F9005F8EC3 /* iPhoneLarge.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = iPhoneLarge.plist; sourceTree = "<group>"; };
 		DE5F33AE2701CC73005F8EC3 /* ABNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABNetworkManager.swift; sourceTree = "<group>"; };
+		DE5F33BC2701E8ED005F8EC3 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		DE5F33C02701EA85005F8EC3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,8 +139,9 @@
 		DE5F339527019E2A005F8EC3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DE5F339627019E3C005F8EC3 /* ABUtils.swift */,
-				DE5F339A27019F49005F8EC3 /* ABThemeConstant.swift */,
+				DE5F33B72701E8BE005F8EC3 /* Utils */,
+				DE5F33B92701E8C7005F8EC3 /* Constants */,
+				DE5F33BB2701E8D6005F8EC3 /* Enums */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -176,6 +181,31 @@
 				DE5F33AE2701CC73005F8EC3 /* ABNetworkManager.swift */,
 			);
 			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		DE5F33B72701E8BE005F8EC3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DE5F339627019E3C005F8EC3 /* ABUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DE5F33B92701E8C7005F8EC3 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				DE5F339A27019F49005F8EC3 /* ABThemeConstant.swift */,
+				DE5F33C02701EA85005F8EC3 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		DE5F33BB2701E8D6005F8EC3 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				DE5F33BC2701E8ED005F8EC3 /* Enums.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,8 +291,10 @@
 				DE5F339B27019F49005F8EC3 /* ABThemeConstant.swift in Sources */,
 				DE5F334A27018265005F8EC3 /* ViewController.swift in Sources */,
 				DE5F334627018265005F8EC3 /* AppDelegate.swift in Sources */,
+				DE5F33C12701EA85005F8EC3 /* Constants.swift in Sources */,
 				DE5F334827018265005F8EC3 /* SceneDelegate.swift in Sources */,
 				DE5F339727019E3C005F8EC3 /* ABUtils.swift in Sources */,
+				DE5F33BD2701E8EE005F8EC3 /* Enums.swift in Sources */,
 				DE5F336B27018352005F8EC3 /* EnvironmentSetup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
