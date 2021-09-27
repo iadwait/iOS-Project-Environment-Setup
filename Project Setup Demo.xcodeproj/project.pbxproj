@@ -18,6 +18,10 @@
 		DE5F338327018D7C005F8EC3 /* PreProd.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE5F338227018D7C005F8EC3 /* PreProd.plist */; };
 		DE5F338627018D88005F8EC3 /* CUG.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE5F338527018D88005F8EC3 /* CUG.plist */; };
 		DE5F338927018D91005F8EC3 /* PROD.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE5F338827018D91005F8EC3 /* PROD.plist */; };
+		DE5F338E27019C9D005F8EC3 /* ColorData.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE5F338D27019C9D005F8EC3 /* ColorData.plist */; };
+		DE5F339227019D53005F8EC3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F339127019D53005F8EC3 /* Extensions.swift */; };
+		DE5F339727019E3C005F8EC3 /* ABUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F339627019E3C005F8EC3 /* ABUtils.swift */; };
+		DE5F339B27019F49005F8EC3 /* ABThemeConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F339A27019F49005F8EC3 /* ABThemeConstant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		DE5F338227018D7C005F8EC3 /* PreProd.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PreProd.plist; sourceTree = "<group>"; };
 		DE5F338527018D88005F8EC3 /* CUG.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CUG.plist; sourceTree = "<group>"; };
 		DE5F338827018D91005F8EC3 /* PROD.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PROD.plist; sourceTree = "<group>"; };
+		DE5F338D27019C9D005F8EC3 /* ColorData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ColorData.plist; sourceTree = "<group>"; };
+		DE5F339127019D53005F8EC3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DE5F339627019E3C005F8EC3 /* ABUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABUtils.swift; sourceTree = "<group>"; };
+		DE5F339A27019F49005F8EC3 /* ABThemeConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABThemeConstant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,8 @@
 		DE5F334427018265005F8EC3 /* Project Setup Demo */ = {
 			isa = PBXGroup;
 			children = (
+				DE5F339527019E2A005F8EC3 /* Resources */,
+				DE5F339027019D42005F8EC3 /* Extensions */,
 				DE5F337A2701889D005F8EC3 /* AppDelegate */,
 				DE5F337C270188AA005F8EC3 /* EnvironmentSetup */,
 				DE5F337E27018D54005F8EC3 /* Plist */,
@@ -102,8 +112,26 @@
 				DE5F338227018D7C005F8EC3 /* PreProd.plist */,
 				DE5F338527018D88005F8EC3 /* CUG.plist */,
 				DE5F338827018D91005F8EC3 /* PROD.plist */,
+				DE5F338D27019C9D005F8EC3 /* ColorData.plist */,
 			);
 			path = Plist;
+			sourceTree = "<group>";
+		};
+		DE5F339027019D42005F8EC3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DE5F339127019D53005F8EC3 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DE5F339527019E2A005F8EC3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DE5F339627019E3C005F8EC3 /* ABUtils.swift */,
+				DE5F339A27019F49005F8EC3 /* ABThemeConstant.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +193,7 @@
 			files = (
 				DE5F338327018D7C005F8EC3 /* PreProd.plist in Resources */,
 				DE5F335227018266005F8EC3 /* LaunchScreen.storyboard in Resources */,
+				DE5F338E27019C9D005F8EC3 /* ColorData.plist in Resources */,
 				DE5F338627018D88005F8EC3 /* CUG.plist in Resources */,
 				DE5F338927018D91005F8EC3 /* PROD.plist in Resources */,
 				DE5F338027018D6B005F8EC3 /* UAT.plist in Resources */,
@@ -180,9 +209,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE5F339227019D53005F8EC3 /* Extensions.swift in Sources */,
+				DE5F339B27019F49005F8EC3 /* ABThemeConstant.swift in Sources */,
 				DE5F334A27018265005F8EC3 /* ViewController.swift in Sources */,
 				DE5F334627018265005F8EC3 /* AppDelegate.swift in Sources */,
 				DE5F334827018265005F8EC3 /* SceneDelegate.swift in Sources */,
+				DE5F339727019E3C005F8EC3 /* ABUtils.swift in Sources */,
 				DE5F336B27018352005F8EC3 /* EnvironmentSetup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,9 +16,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Access Plist Details based on Environment/Scheme Selected
         if let releaseType = objEnv.releaseType,let appVersion = objEnv.appVersion {
             lblAppVersion.text = "\(releaseType) : \(appVersion)"
         }
+        // Set Colors
+        self.view.backgroundColor =  ABUtils.shared.convertHexColor(forColor: ABThemeConstant.shared.LightOrange)
     }
 
 }
