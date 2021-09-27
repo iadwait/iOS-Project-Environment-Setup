@@ -24,6 +24,14 @@ class ViewController: UIViewController {
         self.view.backgroundColor =  ABUtils.shared.convertHexColor(forColor: ABThemeConstant.shared.LightOrange)
         // Set Font
         self.lblAppVersion.font = ABUtils.shared.getSpecificFontSize(fontSize: ABThemeConstant.shared.FontSizeM)
+        // Api Calls
+        ABNetworkManager.shared.callApiWithURLSession(strURL: "https://api.coindesk.com/v1/bpi/currentprice.json") { (isSuccess, response, error) in
+            if isSuccess {
+                print("Api Call Success")
+            } else {
+                print("Api Call Failed \(error)")
+            }
+        }
     }
 
 }

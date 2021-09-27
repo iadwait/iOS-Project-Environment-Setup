@@ -25,6 +25,7 @@
 		DE5F33A42701B9DA005F8EC3 /* iPhoneSmall.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE5F33A32701B9DA005F8EC3 /* iPhoneSmall.plist */; };
 		DE5F33A72701B9EA005F8EC3 /* iPhoneMedium.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE5F33A62701B9EA005F8EC3 /* iPhoneMedium.plist */; };
 		DE5F33AA2701B9F9005F8EC3 /* iPhoneLarge.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE5F33A92701B9F9005F8EC3 /* iPhoneLarge.plist */; };
+		DE5F33AF2701CC73005F8EC3 /* ABNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F33AE2701CC73005F8EC3 /* ABNetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		DE5F33A32701B9DA005F8EC3 /* iPhoneSmall.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = iPhoneSmall.plist; sourceTree = "<group>"; };
 		DE5F33A62701B9EA005F8EC3 /* iPhoneMedium.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = iPhoneMedium.plist; sourceTree = "<group>"; };
 		DE5F33A92701B9F9005F8EC3 /* iPhoneLarge.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = iPhoneLarge.plist; sourceTree = "<group>"; };
+		DE5F33AE2701CC73005F8EC3 /* ABNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABNetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		DE5F334427018265005F8EC3 /* Project Setup Demo */ = {
 			isa = PBXGroup;
 			children = (
+				DE5F33B12701CC80005F8EC3 /* NetworkManager */,
 				DE5F339527019E2A005F8EC3 /* Resources */,
 				DE5F339027019D42005F8EC3 /* Extensions */,
 				DE5F337A2701889D005F8EC3 /* AppDelegate */,
@@ -167,6 +170,14 @@
 			path = "Font Sizes";
 			sourceTree = "<group>";
 		};
+		DE5F33B12701CC80005F8EC3 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				DE5F33AE2701CC73005F8EC3 /* ABNetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -246,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE5F339227019D53005F8EC3 /* Extensions.swift in Sources */,
+				DE5F33AF2701CC73005F8EC3 /* ABNetworkManager.swift in Sources */,
 				DE5F339B27019F49005F8EC3 /* ABThemeConstant.swift in Sources */,
 				DE5F334A27018265005F8EC3 /* ViewController.swift in Sources */,
 				DE5F334627018265005F8EC3 /* AppDelegate.swift in Sources */,
