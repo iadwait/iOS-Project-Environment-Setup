@@ -7,6 +7,7 @@ Completed
 - Apply Hex Colors by fetching Hex Codes from ColorData.plist File
 - Apply Font Size Based on Device Sizes
 - Added Api Call's using URL Session
+- Added MVC Code Flow
 
 In Process
 - Add User Defined Font's
