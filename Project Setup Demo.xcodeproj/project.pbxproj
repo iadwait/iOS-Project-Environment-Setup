@@ -220,9 +220,7 @@
 		DE6B66782702D2EF00327DDB /* MVC */ = {
 			isa = PBXGroup;
 			children = (
-				DE6B667C2702D30100327DDB /* Model */,
-				DE6B667D2702D30900327DDB /* View */,
-				DE6B667A2702D2F700327DDB /* Controller */,
+				DE6B66822702D89400327DDB /* Currency Price Module */,
 			);
 			path = MVC;
 			sourceTree = "<group>";
@@ -249,6 +247,16 @@
 				DE5F334B27018265005F8EC3 /* Main.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		DE6B66822702D89400327DDB /* Currency Price Module */ = {
+			isa = PBXGroup;
+			children = (
+				DE6B667C2702D30100327DDB /* Model */,
+				DE6B667D2702D30900327DDB /* View */,
+				DE6B667A2702D2F700327DDB /* Controller */,
+			);
+			path = "Currency Price Module";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
