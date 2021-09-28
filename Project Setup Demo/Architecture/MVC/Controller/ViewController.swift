@@ -28,6 +28,11 @@ class ViewController: UIViewController {
         ABNetworkManager.shared.callApiWithURLSession(strURL: URLConstant.currentPrice.rawValue) { (isSuccess, response, error) in
             if isSuccess {
                 print("Api Call Success")
+                if let data = response as? Data {
+                    let jsonDecoder = JSONDecoder()
+                    let responseModel = try! jsonDecoder.decode(CurrencyDataModel.self, from: data)
+                    print("Parsing Success")
+                }
             } else {
                 print("Api Call Failed \(error)")
             }
