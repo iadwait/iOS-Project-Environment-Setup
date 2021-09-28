@@ -25,17 +25,30 @@ class ViewController: UIViewController {
         // Set Font
         self.lblAppVersion.font = ABUtils.shared.getSpecificFontSize(fontSize: ABThemeConstant.shared.FontSizeM)
         // Api Calls
+        self.showLoader()
         ABNetworkManager.shared.callApiWithURLSession(strURL: URLConstant.currentPrice.rawValue) { (isSuccess, response, error) in
+            self.hideLoader()
             if isSuccess {
-                print("Api Call Success")
                 if let data = response as? Data {
                     let jsonDecoder = JSONDecoder()
-                    let responseModel = try! jsonDecoder.decode(CurrencyDataModel.self, from: data)
-                    print("Parsing Success")
+                    let _ = try! jsonDecoder.decode(CurrencyDataModel.self, from: data)
+                    self.showAlert(title: "Success", message: "Api Call Success and Data has been Parsed")
                 }
             } else {
-                print("Api Call Failed \(error)")
+                self.showAlert(title: "Failure", message: "Api Call Failed \(error)")
             }
+        }
+    }
+    
+    /// Function call to show Alert
+    /// - Parameters:
+    ///   - title: Title
+    ///   - message: Message
+    func showAlert(title: String,message: String) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }
     }
 
