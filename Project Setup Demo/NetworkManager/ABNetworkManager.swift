@@ -17,7 +17,7 @@ class ABNetworkManager {
     /// - Parameters:
     ///   - strURL: URL in string format
     ///   - completion: Return Api Response/Error
-    func callApiWithURLSession(strURL: String, completion: @escaping (_ isSuccess: Bool,_ response: String,_ error: String) -> Void) {
+    func callApiWithURLSession(strURL: String, completion: @escaping (_ isSuccess: Bool,_ responseData: Any,_ error: String) -> Void) {
         // Generate URL
         if let url = URL(string: strURL) {
             task = URLSession.shared.dataTask(with: url) { (data, response, error) in
@@ -29,7 +29,7 @@ class ABNetworkManager {
                     if let _ = data {
                         let actualResponse = String(decoding: data!, as: UTF8.self)
                         print("Response = \(actualResponse)")
-                        completion(true,actualResponse,"")
+                        completion(true,data!,"")
                     }
                 }
             }

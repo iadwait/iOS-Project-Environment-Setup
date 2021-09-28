@@ -28,6 +28,7 @@
 		DE5F33AF2701CC73005F8EC3 /* ABNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F33AE2701CC73005F8EC3 /* ABNetworkManager.swift */; };
 		DE5F33BD2701E8EE005F8EC3 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F33BC2701E8ED005F8EC3 /* Enums.swift */; };
 		DE5F33C12701EA85005F8EC3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F33C02701EA85005F8EC3 /* Constants.swift */; };
+		DE6B66802702D35D00327DDB /* CurrencyDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6B667F2702D35D00327DDB /* CurrencyDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		DE5F33AE2701CC73005F8EC3 /* ABNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABNetworkManager.swift; sourceTree = "<group>"; };
 		DE5F33BC2701E8ED005F8EC3 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		DE5F33C02701EA85005F8EC3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DE6B667F2702D35D00327DDB /* CurrencyDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,10 +94,9 @@
 				DE5F337A2701889D005F8EC3 /* AppDelegate */,
 				DE5F337C270188AA005F8EC3 /* EnvironmentSetup */,
 				DE5F337E27018D54005F8EC3 /* Plist */,
+				DE6B66762702D2DA00327DDB /* Architecture */,
 				DE5F335327018266005F8EC3 /* Info.plist */,
 				DE5F334727018265005F8EC3 /* SceneDelegate.swift */,
-				DE5F334927018265005F8EC3 /* ViewController.swift */,
-				DE5F334B27018265005F8EC3 /* Main.storyboard */,
 				DE5F334E27018266005F8EC3 /* Assets.xcassets */,
 				DE5F335027018266005F8EC3 /* LaunchScreen.storyboard */,
 			);
@@ -208,6 +209,56 @@
 			path = Enums;
 			sourceTree = "<group>";
 		};
+		DE6B66762702D2DA00327DDB /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				DE6B66782702D2EF00327DDB /* MVC */,
+			);
+			path = Architecture;
+			sourceTree = "<group>";
+		};
+		DE6B66782702D2EF00327DDB /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				DE6B66822702D89400327DDB /* Currency Price Module */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		DE6B667A2702D2F700327DDB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE5F334927018265005F8EC3 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE6B667C2702D30100327DDB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE6B667F2702D35D00327DDB /* CurrencyDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE6B667D2702D30900327DDB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE5F334B27018265005F8EC3 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE6B66822702D89400327DDB /* Currency Price Module */ = {
+			isa = PBXGroup;
+			children = (
+				DE6B667C2702D30100327DDB /* Model */,
+				DE6B667D2702D30900327DDB /* View */,
+				DE6B667A2702D2F700327DDB /* Controller */,
+			);
+			path = "Currency Price Module";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -287,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE5F339227019D53005F8EC3 /* Extensions.swift in Sources */,
+				DE6B66802702D35D00327DDB /* CurrencyDataModel.swift in Sources */,
 				DE5F33AF2701CC73005F8EC3 /* ABNetworkManager.swift in Sources */,
 				DE5F339B27019F49005F8EC3 /* ABThemeConstant.swift in Sources */,
 				DE5F334A27018265005F8EC3 /* ViewController.swift in Sources */,
