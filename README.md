@@ -10,8 +10,8 @@ Completed
 - Added MVC Architecture
 - Added SSL Pinning (Certificate Pinning, Public Key Pinning)
 - Added MVP Architecture
+- Added User Defined Font's
 
 In Process
-- Add User Defined Font's
 - Add Function to use SVG Images
 - Add Api Call's using Alamofire
