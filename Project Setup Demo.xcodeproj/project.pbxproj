@@ -37,6 +37,7 @@
 		DEB6212F2759EA5100DB49A5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB6212E2759EA5100DB49A5 /* BaseViewController.swift */; };
 		DEB621362759EE2700DB49A5 /* LeftRightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB621342759EE2700DB49A5 /* LeftRightCell.swift */; };
 		DEB621372759EE2700DB49A5 /* LeftRightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEB621352759EE2700DB49A5 /* LeftRightCell.xib */; };
+		DEB6213A2759F2C200DB49A5 /* LeftRightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB621392759F2C200DB49A5 /* LeftRightModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		DEB6212E2759EA5100DB49A5 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		DEB621342759EE2700DB49A5 /* LeftRightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftRightCell.swift; sourceTree = "<group>"; };
 		DEB621352759EE2700DB49A5 /* LeftRightCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftRightCell.xib; sourceTree = "<group>"; };
+		DEB621392759F2C200DB49A5 /* LeftRightModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftRightModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -359,6 +361,7 @@
 			children = (
 				DEB621342759EE2700DB49A5 /* LeftRightCell.swift */,
 				DEB621352759EE2700DB49A5 /* LeftRightCell.xib */,
+				DEB621392759F2C200DB49A5 /* LeftRightModel.swift */,
 			);
 			path = LeftRightLabel;
 			sourceTree = "<group>";
@@ -454,6 +457,7 @@
 				DE5F33C12701EA85005F8EC3 /* Constants.swift in Sources */,
 				DE5F334827018265005F8EC3 /* SceneDelegate.swift in Sources */,
 				DE5F339727019E3C005F8EC3 /* ABUtils.swift in Sources */,
+				DEB6213A2759F2C200DB49A5 /* LeftRightModel.swift in Sources */,
 				DEB621362759EE2700DB49A5 /* LeftRightCell.swift in Sources */,
 				DE5F33BD2701E8EE005F8EC3 /* Enums.swift in Sources */,
 				DE5F336B27018352005F8EC3 /* EnvironmentSetup.swift in Sources */,
