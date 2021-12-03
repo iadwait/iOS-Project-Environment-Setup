@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: BaseViewController {
 
     // MARK: - IBOutlets
     @IBOutlet weak var lblAppVersion: UILabel!
@@ -68,18 +68,6 @@ class ViewController: UIViewController {
     
     
     // MARK: - User Defined Functions
-    
-    /// Function call to show Alert
-    /// - Parameters:
-    ///   - title: Title
-    ///   - message: Message
-    func showAlert(title: String,message: String) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-            let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
-            self.present(alert, animated: true, completion: nil)
-        }
-    }
 
 }
 
