@@ -7,6 +7,7 @@
 
 import Foundation
 import CommonCrypto
+import Alamofire
 
 /// This Class will Manage all Api Calls with URL Sessions/Alamofire
 class ABNetworkManager: NSObject {
@@ -29,6 +30,8 @@ class ABNetworkManager: NSObject {
         }
         return Data(hash).base64EncodedString()
     }
+    
+    // MARK: - URL Session Methods
     
     /// Function Call to get Api Response using URL Session
     /// - Parameters:
@@ -92,11 +95,41 @@ class ABNetworkManager: NSObject {
                 }
             }
             task.resume()
+        } else {
+            completion(false,"","Error forming URL")
+        }
+    }
+    
+    // MARK: - Alamofire Methods
+    
+    /// Function call to hit Api using Alamofire
+    /// - Parameters:
+    ///   - url: URL Reqest
+    ///   - completion: Response Block
+    func callApiWithAlamofire(withURL url: String,completion: @escaping(_ isSuccess: Bool,_ response: Any?,_ error: String) -> Void) {
+        if let url = URL(string: url) {
+            AF.request(url).response { (responseObject) in
+                switch responseObject.result {
+                case .success(let value):
+                    if let resData = value {
+                        let resString = String(data: resData, encoding: .utf8)
+                        print("Response = \(resString ?? "")")
+                        completion(true,resData,"")
+                    } else {
+                        completion(false,nil,"No Data Received from Backend")
+                    }
+                case .failure(let error):
+                    print("Alamofire Failure - \(error)")
+                }
+            }
         }
     }
     
 }
 
+// MARK: - Extensions
+
+// MARK: - URLSessionDelegate
 extension ABNetworkManager: URLSessionDelegate {
     
     func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {

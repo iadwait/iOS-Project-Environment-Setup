@@ -15,6 +15,7 @@ class ViewController: BaseViewController {
     // MARK: - Variable Declaration
     let objEnv = EnvironmentSetup.shared
     let isCertificatePinning = true
+    let isURLSession = false // True means Alamofire
     
     // MARK: - View's Initialization Methods
     override func viewDidLoad() {
@@ -28,17 +29,37 @@ class ViewController: BaseViewController {
         // Set Font
         self.lblAppVersion.font = ABUtils.shared.getSpecificFontSize(fontSize: ABThemeConstant.shared.FontSizeM)
         // Api Calls
-        self.showLoader()
-        ABNetworkManager.shared.callApiWithURLSession(strURL: URLConstant.currentPrice.rawValue) { (isSuccess, response, error) in
-            self.hideLoader()
-            if isSuccess {
-                if let data = response as? Data {
-                    let jsonDecoder = JSONDecoder()
-                    let _ = try! jsonDecoder.decode(CurrencyDataModel.self, from: data)
-                    self.showAlert(title: "Success", message: "Api Call Success and Data has been Parsed")
+        if isURLSession {
+            self.showLoader()
+            ABNetworkManager.shared.callApiWithURLSession(strURL: URLConstant.currentPrice.rawValue) { (isSuccess, response, error) in
+                self.hideLoader()
+                if isSuccess {
+                    if let data = response as? Data {
+                        let jsonDecoder = JSONDecoder()
+                        let _ = try! jsonDecoder.decode(CurrencyDataModel.self, from: data)
+                        self.showAlert(title: "Success", message: "Api Call Success and Data has been Parsed")
+                    }
+                } else {
+                    self.showAlert(title: "Failure", message: "Api Call Failed \(error)")
                 }
-            } else {
-                self.showAlert(title: "Failure", message: "Api Call Failed \(error)")
+            }
+        } else {
+            self.showLoader()
+            ABNetworkManager.shared.callApiWithAlamofire(withURL: URLConstant.currentPrice.rawValue) { (isSuccess, response, error) in
+                self.hideLoader()
+                if isSuccess {
+                    if let data = response as? Data {
+                        let jsonDecoder = JSONDecoder()
+                        do {
+                            let _ = try jsonDecoder.decode(CurrencyDataModel.self, from: data)
+                            self.showAlert(title: "Success", message: "Api Call Success and Data has been Parsed")
+                        } catch let error {
+                            self.showAlert(title: "Failure", message: "There was Error Decoding Data - \(error)")
+                        }
+                    }
+                } else {
+                    self.showAlert(title: "Failure", message: "Api Call Failed \(error)")
+                }
             }
         }
     }
