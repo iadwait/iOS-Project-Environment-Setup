@@ -7,6 +7,12 @@
 
 import UIKit
 
+/// Datatype Enum
+enum dataType {
+    case String
+    case Int
+}
+
 /// This class is controller for Covid Details View
 class CovidStatusViewController: BaseViewController {
 
@@ -44,9 +50,10 @@ class CovidStatusViewController: BaseViewController {
     
     
     // MARK: - User Defined Functions
-
+    
+    /// Function to setup Screen UI
     func setupUI() {
-        
+        // Do Nothing
     }
     
     /// Function Call to
@@ -55,6 +62,45 @@ class CovidStatusViewController: BaseViewController {
         tblViewCovidDetails.delegate = self
         tblViewCovidDetails.dataSource = self
         tblViewCovidDetails.separatorStyle = .none
+    }
+    
+    /// Function Call to Setup Table Contents
+    /// - Parameter covidDetails: Covid Details Object
+    func getTableContents(covidDetails: CovidDataModel) {
+        arrLeftRightData.removeAll()
+        // Append New Data
+        arrLeftRightData.append(LeftRightModel.createObject(leftLabelData: "Date", rightLabelData: nullCheckString(data: covidDetails.date, type: .Int)))
+        arrLeftRightData.append(LeftRightModel.createObject(leftLabelData: "States", rightLabelData: nullCheckString(data: covidDetails.states, type: .Int)))
+        arrLeftRightData.append(LeftRightModel.createObject(leftLabelData: "Positive Cases", rightLabelData: nullCheckString(data: covidDetails.positive, type: .Int)))
+        arrLeftRightData.append(LeftRightModel.createObject(leftLabelData: "Negative Cases", rightLabelData: nullCheckString(data: covidDetails.negative, type: .Int)))
+        arrLeftRightData.append(LeftRightModel.createObject(leftLabelData: "Pending Tests", rightLabelData: nullCheckString(data: covidDetails.pending, type: .Int)))
+        arrLeftRightData.append(LeftRightModel.createObject(leftLabelData: "Total Cases", rightLabelData: nullCheckString(data: covidDetails.total, type: .Int)))
+        arrLeftRightData.append(LeftRightModel.createObject(leftLabelData: "Recovered Cases", rightLabelData: nullCheckString(data: covidDetails.recovered, type: .String)))
+    }
+    
+    /// Function call to check if null value is present and send data accordingly
+    /// - Parameters:
+    ///   - data: data
+    ///   - type: dataType enum
+    /// - Returns: String to be set on Label
+    func nullCheckString(data: Any?,type: dataType) -> String {
+        if type == .String {
+            let value = data as? String
+            if value != "" && value != nil {
+                return value!
+            } else {
+                return "Not Received"
+            }
+        }
+        if type == .Int {
+            let value = data as? Int
+            if value != nil {
+               return "\(value!)"
+            } else {
+                return "Not Received"
+            }
+        }
+        return ""
     }
 }
 
@@ -76,15 +122,7 @@ extension CovidStatusViewController: covidPresenterDelegate {
     /// Function call when Api call was successfully done
     /// - Parameter objCovid: Covid Details Object
     func getCovidStatus(objCovid: CovidDataModel) {
-        arrLeftRightData.removeAll()
-        // Append New Data
-        arrLeftRightData.append(LeftRightModel.createObject(leftLabelData: "Date", rightLabelData: "\(objCovid.date ?? 0)"))
-        arrLeftRightData.append(LeftRightModel.createObject(leftLabelData: "States", rightLabelData: "\(objCovid.states ?? 0)"))
-        arrLeftRightData.append(LeftRightModel.createObject(leftLabelData: "Positive Cases", rightLabelData: "\(objCovid.positive ?? 0)"))
-        arrLeftRightData.append(LeftRightModel.createObject(leftLabelData: "Negative Cases", rightLabelData: "\(objCovid.negative ?? 0)"))
-        arrLeftRightData.append(LeftRightModel.createObject(leftLabelData: "Pending Tests", rightLabelData: "\(objCovid.pending ?? 0)"))
-        arrLeftRightData.append(LeftRightModel.createObject(leftLabelData: "Total Cases", rightLabelData: "\(objCovid.total ?? 0)"))
-        arrLeftRightData.append(LeftRightModel.createObject(leftLabelData: "Recovered Cases", rightLabelData: "\(objCovid.recovered ?? "Not Received")"))
+        self.getTableContents(covidDetails: objCovid)
         // Update UI
         DispatchQueue.main.async {
             self.tblViewCovidDetails.reloadData()

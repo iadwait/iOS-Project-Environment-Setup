@@ -31,7 +31,8 @@ class LeftRightCell: UITableViewCell {
     
     /// Function Call to setup Cell's UI
     func setupUI() {
-        
+        self.backgroundColor = ABUtils.shared.convertHexColor(forColor: ABThemeConstant.shared.White)
+        self.selectionStyle = .none
     }
     
 }

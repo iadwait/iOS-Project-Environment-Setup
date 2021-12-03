@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Model Class for Covid Details
 struct CovidDataModel : Codable {
     let date : Int?
     let states : Int?

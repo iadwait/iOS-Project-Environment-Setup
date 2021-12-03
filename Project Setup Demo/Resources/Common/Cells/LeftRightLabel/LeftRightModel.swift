@@ -10,8 +10,12 @@ import Foundation
 /// This Class is used to hold Left Label Data and Right Label Data
 class LeftRightModel {
     
+    // MARK: - Variable Declaration
+    
     var leftData = String()
     var rightData = String()
+    
+    // MARK: - User Defined Functions
     
     /// Function call when user need to create object of left right label data
     /// - Parameters:
