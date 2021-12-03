@@ -29,6 +29,9 @@
 		DE5F33BD2701E8EE005F8EC3 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F33BC2701E8ED005F8EC3 /* Enums.swift */; };
 		DE5F33C12701EA85005F8EC3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F33C02701EA85005F8EC3 /* Constants.swift */; };
 		DE6B66802702D35D00327DDB /* CurrencyDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6B667F2702D35D00327DDB /* CurrencyDataModel.swift */; };
+		DEA9BE2C275A186700C66873 /* FuzzyBubbles-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DEA9BE29275A186700C66873 /* FuzzyBubbles-Bold.ttf */; };
+		DEA9BE2D275A186700C66873 /* FuzzyBubbles-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DEA9BE2A275A186700C66873 /* FuzzyBubbles-Regular.ttf */; };
+		DEA9BE2E275A186700C66873 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = DEA9BE2B275A186700C66873 /* OFL.txt */; };
 		DEB6210A2759D1CF00DB49A5 /* www.google.co.uk.cer in Resources */ = {isa = PBXBuildFile; fileRef = DEB621092759D1CF00DB49A5 /* www.google.co.uk.cer */; };
 		DEB621212759E2BA00DB49A5 /* CovidDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB621202759E2BA00DB49A5 /* CovidDataModel.swift */; };
 		DEB621242759E2F100DB49A5 /* CovidPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB621232759E2F100DB49A5 /* CovidPresenter.swift */; };
@@ -65,6 +68,9 @@
 		DE5F33BC2701E8ED005F8EC3 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		DE5F33C02701EA85005F8EC3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DE6B667F2702D35D00327DDB /* CurrencyDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDataModel.swift; sourceTree = "<group>"; };
+		DEA9BE29275A186700C66873 /* FuzzyBubbles-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FuzzyBubbles-Bold.ttf"; sourceTree = "<group>"; };
+		DEA9BE2A275A186700C66873 /* FuzzyBubbles-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FuzzyBubbles-Regular.ttf"; sourceTree = "<group>"; };
+		DEA9BE2B275A186700C66873 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		DEB621092759D1CF00DB49A5 /* www.google.co.uk.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = www.google.co.uk.cer; sourceTree = "<group>"; };
 		DEB621202759E2BA00DB49A5 /* CovidDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidDataModel.swift; sourceTree = "<group>"; };
 		DEB621232759E2F100DB49A5 /* CovidPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidPresenter.swift; sourceTree = "<group>"; };
@@ -280,6 +286,24 @@
 			path = "Currency Price Module";
 			sourceTree = "<group>";
 		};
+		DEA9BE27275A184C00C66873 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DEA9BE28275A186700C66873 /* Fuzzy_Bubbles */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		DEA9BE28275A186700C66873 /* Fuzzy_Bubbles */ = {
+			isa = PBXGroup;
+			children = (
+				DEA9BE29275A186700C66873 /* FuzzyBubbles-Bold.ttf */,
+				DEA9BE2A275A186700C66873 /* FuzzyBubbles-Regular.ttf */,
+				DEA9BE2B275A186700C66873 /* OFL.txt */,
+			);
+			path = Fuzzy_Bubbles;
+			sourceTree = "<group>";
+		};
 		DEB621082759D16000DB49A5 /* SSL Certificate */ = {
 			isa = PBXGroup;
 			children = (
@@ -334,6 +358,7 @@
 		DEB6212C2759EA3500DB49A5 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				DEA9BE27275A184C00C66873 /* Fonts */,
 				DEB621322759EDFD00DB49A5 /* Cells */,
 				DEB6212D2759EA4700DB49A5 /* Controller */,
 			);
@@ -427,6 +452,9 @@
 				DE5F335227018266005F8EC3 /* LaunchScreen.storyboard in Resources */,
 				DE5F338E27019C9D005F8EC3 /* ColorData.plist in Resources */,
 				DE5F338627018D88005F8EC3 /* CUG.plist in Resources */,
+				DEA9BE2C275A186700C66873 /* FuzzyBubbles-Bold.ttf in Resources */,
+				DEA9BE2D275A186700C66873 /* FuzzyBubbles-Regular.ttf in Resources */,
+				DEA9BE2E275A186700C66873 /* OFL.txt in Resources */,
 				DEB621372759EE2700DB49A5 /* LeftRightCell.xib in Resources */,
 				DE5F33A42701B9DA005F8EC3 /* iPhoneSmall.plist in Resources */,
 				DE5F338927018D91005F8EC3 /* PROD.plist in Resources */,
