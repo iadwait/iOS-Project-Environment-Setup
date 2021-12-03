@@ -11,7 +11,7 @@ Completed
 - Added SSL Pinning (Certificate Pinning, Public Key Pinning) using URL Session
 - Added MVP Architecture
 - Added User Defined Font's
-- Add Api Call's using Alamofire
+- Added Api Call's using Alamofire
 
 In Process
 - Add Function to use SVG Images
