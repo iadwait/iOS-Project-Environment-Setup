@@ -7,11 +7,11 @@ Completed
 - Apply Hex Colors by fetching Hex Codes from ColorData.plist File
 - Apply Font Size Based on Device Sizes
 - Added Api Call's using URL Session
-- Added MVC Code Flow
+- Added MVC Architecture
 - Added SSL Pinning (Certificate Pinning, Public Key Pinning)
+- Added MVP Architecture
 
 In Process
 - Add User Defined Font's
 - Add Function to use SVG Images
 - Add Api Call's using Alamofire
-- Code Flow - MVP
