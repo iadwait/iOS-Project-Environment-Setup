@@ -8,10 +8,10 @@ Completed
 - Apply Font Size Based on Device Sizes
 - Added Api Call's using URL Session
 - Added MVC Code Flow
+- Added SSL Pinning (Certificate Pinning, Public Key Pinning)
 
 In Process
 - Add User Defined Font's
 - Add Function to use SVG Images
 - Add Api Call's using Alamofire
-- Add SSL Pinning
 - Code Flow - MVP
