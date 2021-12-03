@@ -9,5 +9,7 @@ import Foundation
 
 /// This Class will contain all Constants Key cand Values
 class Constants {
+ 
+    static let sslCertificateName = "www.google.co.uk"
     
 }

@@ -29,6 +29,7 @@
 		DE5F33BD2701E8EE005F8EC3 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F33BC2701E8ED005F8EC3 /* Enums.swift */; };
 		DE5F33C12701EA85005F8EC3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F33C02701EA85005F8EC3 /* Constants.swift */; };
 		DE6B66802702D35D00327DDB /* CurrencyDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6B667F2702D35D00327DDB /* CurrencyDataModel.swift */; };
+		DEB6210A2759D1CF00DB49A5 /* www.google.co.uk.cer in Resources */ = {isa = PBXBuildFile; fileRef = DEB621092759D1CF00DB49A5 /* www.google.co.uk.cer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		DE5F33BC2701E8ED005F8EC3 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		DE5F33C02701EA85005F8EC3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DE6B667F2702D35D00327DDB /* CurrencyDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDataModel.swift; sourceTree = "<group>"; };
+		DEB621092759D1CF00DB49A5 /* www.google.co.uk.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = www.google.co.uk.cer; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		DE5F334427018265005F8EC3 /* Project Setup Demo */ = {
 			isa = PBXGroup;
 			children = (
+				DEB621082759D16000DB49A5 /* SSL Certificate */,
 				DE5F33B12701CC80005F8EC3 /* NetworkManager */,
 				DE5F339527019E2A005F8EC3 /* Resources */,
 				DE5F339027019D42005F8EC3 /* Extensions */,
@@ -259,6 +262,14 @@
 			path = "Currency Price Module";
 			sourceTree = "<group>";
 		};
+		DEB621082759D16000DB49A5 /* SSL Certificate */ = {
+			isa = PBXGroup;
+			children = (
+				DEB621092759D1CF00DB49A5 /* www.google.co.uk.cer */,
+			);
+			path = "SSL Certificate";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -326,6 +337,7 @@
 				DE5F334F27018266005F8EC3 /* Assets.xcassets in Resources */,
 				DE5F33A72701B9EA005F8EC3 /* iPhoneMedium.plist in Resources */,
 				DE5F334D27018265005F8EC3 /* Main.storyboard in Resources */,
+				DEB6210A2759D1CF00DB49A5 /* www.google.co.uk.cer in Resources */,
 				DE5F33AA2701B9F9005F8EC3 /* iPhoneLarge.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
