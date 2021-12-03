@@ -71,7 +71,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="8BW-vC-VS5"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Get Covid Details">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -97,6 +97,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnCovidDetails" destination="Fa8-eS-zfk" id="baW-be-2l4"/>
                         <outlet property="tblViewCovidDetails" destination="OJR-3d-84y" id="HE5-9h-XhP"/>
                     </connections>
                 </viewController>

@@ -60,5 +60,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>FuzzyBubbles-Bold.ttf</string>
+		<string>FuzzyBubbles-Regular.ttf</string>
+	</array>
 </dict>
 </plist>

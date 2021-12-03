@@ -18,6 +18,7 @@ class CovidStatusViewController: BaseViewController {
 
     // MARK: - IBOutlet
     @IBOutlet weak var tblViewCovidDetails: UITableView!
+    @IBOutlet weak var btnCovidDetails: UIButton!
     
     // MARK: - Variable Declaration
     let objCovidPresenter = CovidPresenter()
@@ -53,7 +54,7 @@ class CovidStatusViewController: BaseViewController {
     
     /// Function to setup Screen UI
     func setupUI() {
-        // Do Nothing
+        btnCovidDetails.titleLabel?.font = UIFont(name: ABThemeConstant.shared.fuzzyBubbles, size: 25)
     }
     
     /// Function Call to
