@@ -9,11 +9,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
+    // MARK: - IBOutlets
     @IBOutlet weak var lblAppVersion: UILabel!
     
+    // MARK: - Variable Declaration
     let objEnv = EnvironmentSetup.shared
+    let isCertificatePinning = true
     
+    // MARK: - View's Initialization Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         // Access Plist Details based on Environment/Scheme Selected
@@ -39,6 +42,32 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    
+    // MARK: - IBActions
+    
+    /// Function Call when Button SSL Pinning is Tapped
+    /// - Parameter sender: UIButton
+    @IBAction func btnSSLPinningTapped(_ sender: UIButton) {
+        ABNetworkManager.shared.callApiWithURLSession_SSLPinning(withURL: "https://www.google.co.uk", isSSLPinning: true, isCertificatePinning: isCertificatePinning, sslCertificateName: Constants.sslCertificateName) { (isSuccess, response, error) in
+            if isSuccess {
+                if self.isCertificatePinning {
+                    self.showAlert(title: "Success", message: "Certificate Pinning Successfully Done")
+                } else {
+                    self.showAlert(title: "Success", message: "Public Key Pinning Successfully Done")
+                }
+            } else {
+                if self.isCertificatePinning {
+                    self.showAlert(title: "Failure", message: "Certificate Pinning Failed")
+                } else {
+                    self.showAlert(title: "Failure", message: "Public Key Pinning Failed")
+                }
+            }
+        }
+    }
+    
+    
+    // MARK: - User Defined Functions
     
     /// Function call to show Alert
     /// - Parameters:
