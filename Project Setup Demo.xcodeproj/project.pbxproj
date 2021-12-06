@@ -342,22 +342,30 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
-		DE97FBB7275E0AD20090E4DE /* Encryption Decryption Helper */ = {
+		DE97FBB7275E0AD20090E4DE /* Encryption Decryption */ = {
 			isa = PBXGroup;
 			children = (
-				DE97FBB8275E0AED0090E4DE /* EncryptionHelper.swift */,
-				DE97FBBC275E0CC80090E4DE /* RSA */,
+				DE97FBC3275E10B80090E4DE /* EncryptionHelper */,
+				DE97FBBC275E0CC80090E4DE /* RSA Helper */,
 			);
-			path = "Encryption Decryption Helper";
+			path = "Encryption Decryption";
 			sourceTree = "<group>";
 		};
-		DE97FBBC275E0CC80090E4DE /* RSA */ = {
+		DE97FBBC275E0CC80090E4DE /* RSA Helper */ = {
 			isa = PBXGroup;
 			children = (
 				DE97FBBD275E0CC80090E4DE /* RSAEncryption.swift */,
 				DE97FBBE275E0CC80090E4DE /* RSAViewController.swift */,
 			);
-			path = RSA;
+			path = "RSA Helper";
+			sourceTree = "<group>";
+		};
+		DE97FBC3275E10B80090E4DE /* EncryptionHelper */ = {
+			isa = PBXGroup;
+			children = (
+				DE97FBB8275E0AED0090E4DE /* EncryptionHelper.swift */,
+			);
+			path = EncryptionHelper;
 			sourceTree = "<group>";
 		};
 		DEA9BE27275A184C00C66873 /* Fonts */ = {
@@ -432,7 +440,7 @@
 		DEB6212C2759EA3500DB49A5 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				DE97FBB7275E0AD20090E4DE /* Encryption Decryption Helper */,
+				DE97FBB7275E0AD20090E4DE /* Encryption Decryption */,
 				DE97FBB5275E0AC00090E4DE /* UI */,
 			);
 			path = Common;
