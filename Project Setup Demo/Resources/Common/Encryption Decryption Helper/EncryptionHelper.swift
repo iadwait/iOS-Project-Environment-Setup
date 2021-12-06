@@ -54,8 +54,40 @@ class EncryptionHelper {
         return Data(bytes: keyBuffer, count: keySize).base64EncodedString()
     }
     
+    /// Function call when RSA Encryption need's to be done, & Key need's to be formed using Modulo and Exponenent
+    /// - Parameters:
+    ///   - DataToEncrypt: Data to Encrypt
+    ///   - RSAKey: Base 64 Encoded Key that Contain Modulo and Exponent
+    /// - Returns: Encypted RSA Text
+    static func encryptRSA_Base64EncodedKey(DataToEncrypt:String,RSAKey : String) -> String {
+        let vc =  RSAViewController()
+        let EncryptedData = vc.getRSAEncryptedData(DataToEncrypt: DataToEncrypt, RSAKey: RSAKey)
+        return EncryptedData
+    }
+    
     // MARK: - AES Encryption
     
     // MARK: - SHA Encryption
+    
+    /// Function Call to encrypt Data using SHA Algorithm
+    /// - Parameters:
+    ///   - input: Data to Encrypt
+    ///   - type: Algorithm Type
+    /// - Returns: Encrypted String
+    func encryptSHA(input: String,type: SHAType) -> String {
+        var encryptedString = ""
+        
+        // SHA 256
+        if type == .SHA256 {
+            encryptedString = input.sha256()
+        }
+        
+        // SHA 192
+        if type == .SHA192 {
+            
+        }
+        
+        return encryptedString
+    }
     
 }
