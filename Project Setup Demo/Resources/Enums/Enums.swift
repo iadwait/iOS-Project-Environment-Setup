@@ -31,3 +31,9 @@ enum BaseURL: String {
 enum URLConstant: String {
     case currentPrice = "https://api.coindesk.com/v1/bpi/currentprice.json"
 }
+
+/// Enum to Decide wihch SHA Algoritm to Apply
+enum SHAType: String {
+    case SHA256
+    case SHA192
+}

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -30,6 +30,9 @@
 		DE5F33C12701EA85005F8EC3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F33C02701EA85005F8EC3 /* Constants.swift */; };
 		DE5F9E11DEA94E965C91FA33 /* Pods_Project_Setup_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED186F2B55190954383E382 /* Pods_Project_Setup_Demo.framework */; };
 		DE6B66802702D35D00327DDB /* CurrencyDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6B667F2702D35D00327DDB /* CurrencyDataModel.swift */; };
+		DE97FBB9275E0AED0090E4DE /* EncryptionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE97FBB8275E0AED0090E4DE /* EncryptionHelper.swift */; };
+		DE97FBBF275E0CC80090E4DE /* RSAEncryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE97FBBD275E0CC80090E4DE /* RSAEncryption.swift */; };
+		DE97FBC0275E0CC80090E4DE /* RSAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE97FBBE275E0CC80090E4DE /* RSAViewController.swift */; };
 		DEA9BE2C275A186700C66873 /* FuzzyBubbles-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DEA9BE29275A186700C66873 /* FuzzyBubbles-Bold.ttf */; };
 		DEA9BE2D275A186700C66873 /* FuzzyBubbles-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DEA9BE2A275A186700C66873 /* FuzzyBubbles-Regular.ttf */; };
 		DEA9BE2E275A186700C66873 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = DEA9BE2B275A186700C66873 /* OFL.txt */; };
@@ -80,6 +83,9 @@
 		DE5F33BC2701E8ED005F8EC3 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		DE5F33C02701EA85005F8EC3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DE6B667F2702D35D00327DDB /* CurrencyDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDataModel.swift; sourceTree = "<group>"; };
+		DE97FBB8275E0AED0090E4DE /* EncryptionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionHelper.swift; sourceTree = "<group>"; };
+		DE97FBBD275E0CC80090E4DE /* RSAEncryption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSAEncryption.swift; sourceTree = "<group>"; };
+		DE97FBBE275E0CC80090E4DE /* RSAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSAViewController.swift; sourceTree = "<group>"; };
 		DEA9BE29275A186700C66873 /* FuzzyBubbles-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FuzzyBubbles-Bold.ttf"; sourceTree = "<group>"; };
 		DEA9BE2A275A186700C66873 /* FuzzyBubbles-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FuzzyBubbles-Regular.ttf"; sourceTree = "<group>"; };
 		DEA9BE2B275A186700C66873 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
@@ -128,7 +134,6 @@
 				CCB0086220404797DF9E5BAA /* Pods-Project Setup Demo.releasepreprod.xcconfig */,
 				177BF48E3FD2A7BF0E4E6DF0 /* Pods-Project Setup Demo.releaseuat.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -153,11 +158,11 @@
 		DE5F334427018265005F8EC3 /* Project Setup Demo */ = {
 			isa = PBXGroup;
 			children = (
+				DE5F337A2701889D005F8EC3 /* AppDelegate */,
 				DEB621082759D16000DB49A5 /* SSL Certificate */,
 				DE5F33B12701CC80005F8EC3 /* NetworkManager */,
 				DE5F339527019E2A005F8EC3 /* Resources */,
 				DE5F339027019D42005F8EC3 /* Extensions */,
-				DE5F337A2701889D005F8EC3 /* AppDelegate */,
 				DE5F337C270188AA005F8EC3 /* EnvironmentSetup */,
 				DE5F337E27018D54005F8EC3 /* Plist */,
 				DE6B66762702D2DA00327DDB /* Architecture */,
@@ -327,6 +332,42 @@
 			path = "Currency Price Module";
 			sourceTree = "<group>";
 		};
+		DE97FBB5275E0AC00090E4DE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DEA9BE27275A184C00C66873 /* Fonts */,
+				DEB621322759EDFD00DB49A5 /* Cells */,
+				DEB6212D2759EA4700DB49A5 /* Controller */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		DE97FBB7275E0AD20090E4DE /* Encryption Decryption */ = {
+			isa = PBXGroup;
+			children = (
+				DE97FBC3275E10B80090E4DE /* EncryptionHelper */,
+				DE97FBBC275E0CC80090E4DE /* RSA Helper */,
+			);
+			path = "Encryption Decryption";
+			sourceTree = "<group>";
+		};
+		DE97FBBC275E0CC80090E4DE /* RSA Helper */ = {
+			isa = PBXGroup;
+			children = (
+				DE97FBBD275E0CC80090E4DE /* RSAEncryption.swift */,
+				DE97FBBE275E0CC80090E4DE /* RSAViewController.swift */,
+			);
+			path = "RSA Helper";
+			sourceTree = "<group>";
+		};
+		DE97FBC3275E10B80090E4DE /* EncryptionHelper */ = {
+			isa = PBXGroup;
+			children = (
+				DE97FBB8275E0AED0090E4DE /* EncryptionHelper.swift */,
+			);
+			path = EncryptionHelper;
+			sourceTree = "<group>";
+		};
 		DEA9BE27275A184C00C66873 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -399,9 +440,8 @@
 		DEB6212C2759EA3500DB49A5 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				DEA9BE27275A184C00C66873 /* Fonts */,
-				DEB621322759EDFD00DB49A5 /* Cells */,
-				DEB6212D2759EA4700DB49A5 /* Controller */,
+				DE97FBB7275E0AD20090E4DE /* Encryption Decryption */,
+				DE97FBB5275E0AC00090E4DE /* UI */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -561,6 +601,8 @@
 			files = (
 				DEB621272759E82100DB49A5 /* CovidView.swift in Sources */,
 				DE5F339227019D53005F8EC3 /* Extensions.swift in Sources */,
+				DE97FBB9275E0AED0090E4DE /* EncryptionHelper.swift in Sources */,
+				DE97FBBF275E0CC80090E4DE /* RSAEncryption.swift in Sources */,
 				DEB6212A2759E88500DB49A5 /* CovidStatusViewController.swift in Sources */,
 				DE6B66802702D35D00327DDB /* CurrencyDataModel.swift in Sources */,
 				DE5F33AF2701CC73005F8EC3 /* ABNetworkManager.swift in Sources */,
@@ -575,6 +617,7 @@
 				DE5F33BD2701E8EE005F8EC3 /* Enums.swift in Sources */,
 				DE5F336B27018352005F8EC3 /* EnvironmentSetup.swift in Sources */,
 				DEB6212F2759EA5100DB49A5 /* BaseViewController.swift in Sources */,
+				DE97FBC0275E0CC80090E4DE /* RSAViewController.swift in Sources */,
 				DEB621212759E2BA00DB49A5 /* CovidDataModel.swift in Sources */,
 				DEB621242759E2F100DB49A5 /* CovidPresenter.swift in Sources */,
 			);
