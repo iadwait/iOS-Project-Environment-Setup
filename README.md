@@ -12,6 +12,7 @@ Completed
 - Added MVP Architecture
 - Added User Defined Font's
 - Added Api Call's using Alamofire
+- Encryption (RSA-256, SHA-256)
 
 In Process
 - Add Function to use SVG Images
