@@ -3,4 +3,54 @@
    uuid = "FDB3BA65-C34B-46D8-A03C-91292AE5130D"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8C61FFE4-A62D-4806-BCB5-EFE25B2BB6B3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Project Setup Demo/Architecture/MVVM/News Module/View/Controller/NewsListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "btnGetUpdatedNewsTapped(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8C61FFE4-A62D-4806-BCB5-EFE25B2BB6B3 - cb984cc1888f7c94"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Project_Setup_Demo.NewsDataModel&gt;, Swift.String) -&gt; () in Project_Setup_Demo.NewsListViewController.btnGetUpdatedNewsTapped(__C.UIButton) -&gt; ()"
+                  moduleName = "Project Setup Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adwaitb/Documents/Github%20Projects/iOS%20Environment%20Setup/iOS-Project-Environment-Setup/Project%20Setup%20Demo/Architecture/MVVM/News%20Module/View/Controller/NewsListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "892">
+               </Location>
+               <Location
+                  uuid = "8C61FFE4-A62D-4806-BCB5-EFE25B2BB6B3 - de4c6cd611f61047"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Bool, Swift.Optional&lt;Project_Setup_Demo.NewsDataModel&gt;, Swift.String) -&gt; () in Project_Setup_Demo.NewsListViewController.btnGetUpdatedNewsTapped(__C.UIButton) -&gt; ()"
+                  moduleName = "Project Setup Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adwaitb/Documents/Github%20Projects/iOS%20Environment%20Setup/iOS-Project-Environment-Setup/Project%20Setup%20Demo/Architecture/MVVM/News%20Module/View/Controller/NewsListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
