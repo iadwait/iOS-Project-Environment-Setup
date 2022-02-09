@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fmD-ZZ-fEM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -104,6 +104,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hKP-fX-aLg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="880" y="46"/>
+        </scene>
+        <!--News List View Controller-->
+        <scene sceneID="xrQ-h2-6Mh">
+            <objects>
+                <viewController storyboardIdentifier="NewsListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fmD-ZZ-fEM" customClass="NewsListViewController" customModule="Project_Setup_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BUX-Kf-H5v">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcf-yb-9SI">
+                                <rect key="frame" x="20" y="84" width="374" height="70"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="kIm-bU-Lhg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Get Updated News Details">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnGetUpdatedNewsTapped:" destination="fmD-ZZ-fEM" eventType="touchUpInside" id="L1r-Pa-Xc0"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5S4-Ed-NbZ">
+                                <rect key="frame" x="20" y="174" width="374" height="668"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="otp-uM-fV8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="otp-uM-fV8" firstAttribute="trailing" secondItem="5S4-Ed-NbZ" secondAttribute="trailing" constant="20" id="OM1-fs-q55"/>
+                            <constraint firstItem="5S4-Ed-NbZ" firstAttribute="leading" secondItem="otp-uM-fV8" secondAttribute="leading" constant="20" id="S6C-hk-5iP"/>
+                            <constraint firstItem="bcf-yb-9SI" firstAttribute="leading" secondItem="otp-uM-fV8" secondAttribute="leading" constant="20" id="bES-Ft-yQR"/>
+                            <constraint firstItem="bcf-yb-9SI" firstAttribute="top" secondItem="otp-uM-fV8" secondAttribute="top" constant="40" id="fQ6-HB-OF3"/>
+                            <constraint firstItem="5S4-Ed-NbZ" firstAttribute="top" secondItem="bcf-yb-9SI" secondAttribute="bottom" constant="20" id="hU5-69-SkI"/>
+                            <constraint firstItem="otp-uM-fV8" firstAttribute="bottom" secondItem="5S4-Ed-NbZ" secondAttribute="bottom" constant="20" id="qwO-6K-pRc"/>
+                            <constraint firstItem="otp-uM-fV8" firstAttribute="trailing" secondItem="bcf-yb-9SI" secondAttribute="trailing" constant="20" id="sP3-lx-WSD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnGetUpdatedNews" destination="bcf-yb-9SI" id="Cfh-DF-8RB"/>
+                        <outlet property="tblViewNewsDetails" destination="5S4-Ed-NbZ" id="dSq-aC-1jJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LoW-AD-D5J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1645" y="46"/>
         </scene>
     </scenes>
     <resources>
