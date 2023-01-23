@@ -22,6 +22,7 @@ class NewsListViewController: BaseViewController {
         super.viewDidLoad()
         setupUI()
         configureTableView()
+        testEncryption()
     }
     
     // MARK: - User Defined Functions
@@ -38,6 +39,16 @@ class NewsListViewController: BaseViewController {
         tblViewNewsDetails.dataSource = self
         tblViewNewsDetails.separatorStyle = .none
     }
+    
+    
+    
+    func testEncryption() {
+        let publicKeyString = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC4BBHv/QMdm6KB4FD8QZmrnSsYXKznz8hxMc9AB5PdRNUSOEiCr87CHeriAVahZFUxtBMbXv8xQRPXW2Vr5arOaCbt+NbMp82Omp/ifHf7Ss0nUcve3sEz5PUbRQYALkbPOVhqxrJXxmRJ/aGE5+VSsSd1Nmw8ZaqW3lZC8SZvRwIDAQAB"
+        let res = RSAViewController().encrypt(string: "Adwait", publicKey: publicKeyString)
+        
+    }
+    
+    
     
     // MARK: - IBActions
     
