@@ -12,9 +12,8 @@ Completed
 - Added MVP Architecture
 - Added User Defined Font's
 - Added Api Call's using Alamofire
-- Encryption (RSA-256, SHA-256)
+- Encryption (AES-256, RSA-256, SHA-256)
 - Added MVVM Architecture
 
 In Process
 - Add Function to use SVG Images
-- Add Encryption Decryption Helper Classes (AES-256,RSA-256,SHA-256)
