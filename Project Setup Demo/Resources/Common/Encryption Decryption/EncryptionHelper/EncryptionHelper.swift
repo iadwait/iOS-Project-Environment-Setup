@@ -67,6 +67,22 @@ class EncryptionHelper {
     
     // MARK: - AES Encryption
     
+    static func aesEncryptDecryptTest(dataToEncrypt: String) {
+        // Initialization
+        let key = ABUtils.shared.generateRandomStr(length: 32, shouldContain: .alphabets)
+        let iv = ABUtils.shared.generateRandomStr(length: 16, shouldContain: .alphabets)
+        let aes = AES(key: key, initializationVectorIV: iv)
+        // Encryption
+        let encryptedValue = aes?.encrypt(string: dataToEncrypt)?.base64EncodedString(options:
+                                                                            NSData.Base64EncodingOptions(rawValue:
+                                                                                                            0)) ?? ""
+        print("AES Encrypted Value = \(encryptedValue)")
+        // Decryption
+        let data = Data(base64Encoded: encryptedValue.fixedBase64Format)
+        let decryptedValue = aes?.decrypt(data: data)
+        print("AES Decrypted Value = \(decryptedValue ?? "")")
+    }
+    
     // MARK: - SHA Encryption
     
     /// Function Call to encrypt Data using SHA Algorithm

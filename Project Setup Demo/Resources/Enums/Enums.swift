@@ -37,3 +37,10 @@ enum SHAType: String {
     case SHA256
     case SHA192
 }
+
+/// Enum to Decide what should random generator consider while forming random text
+enum RandomGenerator {
+    case numbers // Only Numbers
+    case alphabets // Only Alphabets
+    case alphanumeric // // Only Numbers + Alphabets
+}

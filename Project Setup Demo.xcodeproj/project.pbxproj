@@ -50,6 +50,7 @@
 		DEB621362759EE2700DB49A5 /* LeftRightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB621342759EE2700DB49A5 /* LeftRightCell.swift */; };
 		DEB621372759EE2700DB49A5 /* LeftRightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEB621352759EE2700DB49A5 /* LeftRightCell.xib */; };
 		DEB6213A2759F2C200DB49A5 /* LeftRightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB621392759F2C200DB49A5 /* LeftRightModel.swift */; };
+		DED02645297E577E003CA23E /* AESHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED02644297E577E003CA23E /* AESHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +109,7 @@
 		DEB621342759EE2700DB49A5 /* LeftRightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftRightCell.swift; sourceTree = "<group>"; };
 		DEB621352759EE2700DB49A5 /* LeftRightCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftRightCell.xib; sourceTree = "<group>"; };
 		DEB621392759F2C200DB49A5 /* LeftRightModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftRightModel.swift; sourceTree = "<group>"; };
+		DED02644297E577E003CA23E /* AESHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AESHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -416,6 +418,7 @@
 		DE97FBB7275E0AD20090E4DE /* Encryption Decryption */ = {
 			isa = PBXGroup;
 			children = (
+				DED02643297E5773003CA23E /* AES Helper */,
 				DE97FBC3275E10B80090E4DE /* EncryptionHelper */,
 				DE97FBBC275E0CC80090E4DE /* RSA Helper */,
 			);
@@ -541,6 +544,14 @@
 				DEB621392759F2C200DB49A5 /* LeftRightModel.swift */,
 			);
 			path = LeftRightLabel;
+			sourceTree = "<group>";
+		};
+		DED02643297E5773003CA23E /* AES Helper */ = {
+			isa = PBXGroup;
+			children = (
+				DED02644297E577E003CA23E /* AESHelper.swift */,
+			);
+			path = "AES Helper";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -674,6 +685,7 @@
 				DEB621272759E82100DB49A5 /* CovidView.swift in Sources */,
 				DE5F339227019D53005F8EC3 /* Extensions.swift in Sources */,
 				DE97FBB9275E0AED0090E4DE /* EncryptionHelper.swift in Sources */,
+				DED02645297E577E003CA23E /* AESHelper.swift in Sources */,
 				DE97FBBF275E0CC80090E4DE /* RSAEncryption.swift in Sources */,
 				DEB6212A2759E88500DB49A5 /* CovidStatusViewController.swift in Sources */,
 				DE6B66802702D35D00327DDB /* CurrencyDataModel.swift in Sources */,

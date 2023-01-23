@@ -79,6 +79,13 @@ extension String {
         return ""
     }
     
+    /// Use to fix incorrect Base64 usually used when decryption fails due to incorrect base64
+    var fixedBase64Format: Self {
+        let offset = count % 4
+        guard offset != 0 else { return self }
+        return padding(toLength: count + 4 - offset, withPad: "=", startingAt: 0)
+    }
+    
 }
 
 //MARK:- Data
