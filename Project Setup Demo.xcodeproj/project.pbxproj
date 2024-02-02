@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -356,9 +356,9 @@
 		DE6B66762702D2DA00327DDB /* Architecture */ = {
 			isa = PBXGroup;
 			children = (
+				DE0A9C8227B39B39003EB51C /* MVVM */,
 				DEB6211A2759E16D00DB49A5 /* MVP */,
 				DE6B66782702D2EF00327DDB /* MVC */,
-				DE0A9C8227B39B39003EB51C /* MVVM */,
 			);
 			path = Architecture;
 			sourceTree = "<group>";
@@ -862,7 +862,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.adwait.Project-Setup-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adwait.ProjectArchitectureSetup;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = UAT;
 				SWIFT_VERSION = 5.0;
@@ -883,7 +883,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.adwait.Project-Setup-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adwait.ProjectArchitectureSetup;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = UAT;
 				SWIFT_VERSION = 5.0;
@@ -965,7 +965,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.adwait.Project-Setup-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adwait.ProjectArchitectureSetup;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = UAT;
 				SWIFT_VERSION = 5.0;
@@ -1041,7 +1041,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.adwait.Project-Setup-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adwait.ProjectArchitectureSetup;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = UAT;
 				SWIFT_VERSION = 5.0;
@@ -1123,7 +1123,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.adwait.Project-Setup-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adwait.ProjectArchitectureSetup;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PreProd;
 				SWIFT_VERSION = 5.0;
@@ -1199,7 +1199,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.adwait.Project-Setup-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adwait.ProjectArchitectureSetup;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PreProd;
 				SWIFT_VERSION = 5.0;
@@ -1281,7 +1281,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.adwait.Project-Setup-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adwait.ProjectArchitectureSetup;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = CUG;
 				SWIFT_VERSION = 5.0;
@@ -1357,7 +1357,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.adwait.Project-Setup-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adwait.ProjectArchitectureSetup;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = CUG;
 				SWIFT_VERSION = 5.0;
@@ -1439,7 +1439,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.adwait.Project-Setup-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adwait.ProjectArchitectureSetup;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PROD;
 				SWIFT_VERSION = 5.0;
@@ -1515,7 +1515,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.adwait.Project-Setup-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adwait.ProjectArchitectureSetup;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PROD;
 				SWIFT_VERSION = 5.0;
