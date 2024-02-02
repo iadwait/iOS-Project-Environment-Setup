@@ -1,7 +1,10 @@
 # iOS-Project-Environment-Setup
+
+## The objective of building this project is to help iOS Developers speedup development process.
+
 This Project contains configuring App based on Scheme User Selects like UAT , PreProd , CUG , Production.
 
-Completed
+### Completed
 - Added Schemes(Debug,Release) for UAT, PreProd, CUG, PROD.
 - Configure Base URL on App Launch
 - Apply Hex Colors by fetching Hex Codes from ColorData.plist File
@@ -15,5 +18,5 @@ Completed
 - Encryption (AES-256, RSA-256, SHA-256)
 - Added MVVM Architecture
 
-In Process
+### In Process
 - Add Function to use SVG Images
